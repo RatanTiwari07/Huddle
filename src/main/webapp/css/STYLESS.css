@@ -1,0 +1,225 @@
+body {
+	height: 3000px;
+}
+
+#myCarousel {
+	margin-top: 50px;
+}
+
+@media ( max-width : 768px) {
+	.carousel-inner .carousel-item>div {
+		display: none;
+	}
+	.carousel-inner .carousel-item>div:first-child {
+		display: block;
+	}
+}
+
+.carousel-inner .carousel-item.active, .carousel-inner .carousel-item-start,
+	.carousel-inner .carousel-item-next, .carousel-inner .carousel-item-prev
+	{
+	display: flex;
+}
+
+@media ( min-width : 768px) {
+	.carousel-inner .carousel-item-right.active, .carousel-inner .carousel-item-next,
+		.carousel-item-next:not(.carousel-item-start) {
+		transform: translateX(25%) !important;
+	}
+	.carousel-inner .carousel-item-left.active, .carousel-item-prev:not(.carousel-item-end),
+		.active.carousel-item-start, .carousel-item-prev:not(.carousel-item-end)
+		{
+		transform: translateX(-25%) !important;
+	}
+	.carousel-item-next.carousel-item-start, .active.carousel-item-end {
+		transform: translateX(0) !important;
+	}
+	.carousel-inner .carousel-item-prev, .carousel-item-prev:not(.carousel-item-end)
+		{
+		transform: translateX(-25%) !important;
+	}
+}
+
+@media ( min-width : 1500px) {
+	#carouselExampleIndicators .carousel-item img {
+		width: 100vw;
+		height: auto;
+	}
+}
+
+@media ( min-width : 1500px) {
+	.row .carousel2 {
+		width: 100vw;
+		height: auto;
+	}
+}
+
+.navbar-scrolled {
+	background-color: #EADBC8;
+	/* color: white; */
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+.navbar {
+	transition: all 0.3s;
+}
+
+.swipper_slider {
+	padding: 50px 15px;
+	margin: 0 auto;
+	/* max-width: 1240px; */
+}
+
+.banner img {
+	transition: transform 0.3s ease-out;
+}
+
+.banner img:hover {
+	transform: scale(1.1);
+}
+
+#mp4 {
+	width: 100%;
+	box-shadow: 5px 12px 12px 12px #bceafc;
+	height: 450px;
+}
+
+video {
+	pointer-events: none;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.splide__slide img {
+	width: 100%;
+	height: auto;
+}
+
+.splide__track .card img {
+	height: 300px;
+	width: 100%;
+	object-fit: contain;
+}
+
+.all {
+	background-color: #12102c;
+}
+
+.dropdown:hover .dropdown-menu {
+	display: block;
+}
+
+#features {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 35px;
+}
+
+#features .fe-box {
+	width: 180px;
+	text-align: center;
+	padding: 25px 15px;
+	border: 1px solid #cce7d0;
+	border-radius: 6px;
+	margin: 12px 0;
+	box-shadow: 0px 0px 15px;
+}
+
+#features .fe-box:hover {
+	cursor: pointer;
+	box-shadow: 5px 5px 10px rgb(0, 0, 0.20);
+}
+
+#features .fe-box img {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+#features .fe-box h6 {
+	display: inline-block;
+	line-height: 1px;
+	padding: 9px 8px 8px 8px;
+	background-color: antiquewhite;
+	color: #088178;
+}
+
+#features .fe-box h6:hover {
+	box-shadow: 0px 0px 10px greenyellow;
+	cursor: pointer;
+}
+
+#features .fe-box:nth-child(2) h6 {
+	background-color: #cdebbc;
+}
+
+#features .fe-box:nth-child(3) h6 {
+	background-color: #bddaad;
+}
+
+#features .fe-box:nth-child(4) h6 {
+	background-color: #cdffb0;
+}
+
+#features .fe-box:nth-child(5) h6 {
+	background-color: #baff93;
+}
+
+#features .fe-box:nth-child(6) h6 {
+	background-color: #5eff00;
+}
+
+.tech-slideshow {
+	height: 65px;
+	max-width: 100%;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	/* border: 1px solid black; */
+	font-size: 0;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+.mover-1 {
+	height: 100%;
+	/* display: flex; */
+	width: max-content;
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	animation: moveSlideshow 4s linear infinite;
+}
+
+.mover-1 img {
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+	width: 100px;
+	margin: 0;
+}
+
+@
+keyframes moveSlideshow { 100% {
+	transform: translateX(-500px);
+}
+
+.glow {
+	font-size: 60px;
+	color: #fff;
+	text-align: center;
+	animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+	
+	from {
+		text-shadow:0010px#fff, 0020px#fff, 0030px#F90716, 0040px#F90716, 0050px#F90716, 0060px#F90716, 0070px#F90716;	
+	}
+
+	to {
+		text-shadow: 0 0 20px #fff, 0 0 30px #FF5403, 0 0 40px #FF5403, 0 0 50px #FF5403, 0 0 60px #FF5403, 0 0 70px #FF5403, 0 0 80px #FF5403;
+	}
+}
